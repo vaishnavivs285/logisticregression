@@ -158,15 +158,8 @@ FastAPI app
 Exposed API on port 8000
 
 🐞 Errors Faced & How I Fixed Them
-❌ Error 1: predict_proba not found
 
-Cause:
-Accidentally deployed a LinearRegression model instead of LogisticRegression.
-
-Fix:
-Re-saved the correct Logistic Regression model and rebuilt Docker image.
-
-❌ Error 2: Feature mismatch
+❌ Error 1: Feature mismatch
 
 Cause:
 Mismatch between training features and API input.
@@ -174,7 +167,7 @@ Mismatch between training features and API input.
 Fix:
 Ensured same feature order and count in training and inference.
 
-❌ Error 3: Docker port already in use
+❌ Error 2: Docker port already in use
 
 Cause:
 Previous container still running.
